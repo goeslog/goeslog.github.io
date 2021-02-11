@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    thinkspace (2.5.0)
+    goesThink (2.5.0)
       jekyll (~> 4.0.0)
 
 GEM
@@ -101,11 +101,11 @@ PLATFORMS
 
 DEPENDENCIES
   bourbon
+  goesThink!
   html-proofer
   jekyll-paginate
   jekyll-sitemap
   rake (~> 12.0)
-  thinkspace!
   tzinfo
   tzinfo-data
 
