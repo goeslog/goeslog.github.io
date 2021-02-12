@@ -30,11 +30,11 @@ HTML구문 중지 후 로드 → script 적용 → HTML 파싱 재개
 
 ![image](https://user-images.githubusercontent.com/49581472/107726660-e604e080-6d2c-11eb-955a-3bfc527d17fe.png)
 
-**로드 중에도 파싱** → HTML 파싱 끝난 후 script 적용
+**로드 중에도 파싱** → HTML 파싱 **끝난 후** script 적용
 
 <br />
 
-#### 계속 연결 & 해제 거치면 비효율적이지 않나 ?
+#### HTTP 연결을 계속 연결 & 해제 거치면 비효율적이지 않나?
 
 ⇒ HTTP/1.1부터 **keep-alive 헤더**가 추가되어 커넥션을 맺은 체로 사용 가능
 
