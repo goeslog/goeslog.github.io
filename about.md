@@ -4,8 +4,6 @@ title: Who Am I
 permalink: /whoami/
 ---
 
-# WHO AM I
-
 **WEB-APPLICATION** ENGINEER IN REPUBLIC OF KOREA.
 
 <br/>
