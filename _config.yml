@@ -2,7 +2,7 @@
 title_left: "goes"
 title_right: "Think" # default: ""
 description: "goesnow's Blog"
-keywords: "Jekyll, SEO, blog, Web, Programmer"
+keywords: "Web, Programmer, Front end, blog, 면접, 코딩"
 url: https://goeslog.github.io # site url
 baseurl: "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
 cover: "" # image uri like logo/cover image for site seo
