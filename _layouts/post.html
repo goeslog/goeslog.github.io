@@ -2,15 +2,75 @@
 layout: default
 ---
 
-<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
+<article
+  class="post container"
+  itemscope
+  itemtype="http://schema.org/BlogPosting"
+>
   <header class="post-header">
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} &middot; <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+    <p class="post-meta">
+      <time
+        datetime="{{ page.date | date_to_xmlschema }}"
+        itemprop="datePublished"
+        >{{ page.date | date: "%b %-d, %Y" }}</time
+      >{% if page.author %} &middot;
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person"
+        ><span itemprop="name">{{ page.author }}</span></span
+      >{% endif %}
+    </p>
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
   </header>
   <div class="post-content" itemprop="articleBody">
-    {{ content }}
-    {% include post-share.html %}
+    {{ content }} {% include post-share.html %}
   </div>
+  <div
+    style="
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+      position: fixed;
+      right: 25px;
+      bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      box-shadow: 1px 3px 16px -3px rgb(100, 100, 100);
+    "
+    id="go-to-top"
+  >
+    top
+  </div>
+  <script>
+    scrollTop("go-to-top", 500);
+    function scrollTop(elem, duration) {
+      let target = document.getElementById(elem);
+
+      target.addEventListener("click", function () {
+        let currentY = window.pageYOffset;
+        let step = duration / currentY > 1 ? 10 : 100;
+        let timeStep = (duration / currentY) * step;
+        let intervalID = setInterval(scrollUp, timeStep);
+
+        let display = true;
+
+        function scrollUp() {
+          currentY = window.pageYOffset;
+          if (currentY === 0) {
+            clearInterval(intervalID);
+            display = true;
+            target.style.display = "flex";
+          } else {
+            if (display) {
+              display = false;
+              target.style.display = "none";
+            }
+            scrollBy(0, -step);
+          }
+        }
+      });
+    }
+  </script>
 </article>
 
 {% include comments.html %}
