@@ -1,7 +1,17 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Who Am I
+permalink: /whoami/
 ---
 
-Introduce yourself here... so people will know who you are and what you do.. blah..blah..blah..
+# WHO AM I
+
+**WEB-APPLICATION** ENGINEER IN REPUBLIC OF KOREA.
+
+<br/>
+
+## INTERESTED IN
+
+<div>
+    <img src="https://user-images.githubusercontent.com/49581472/107733577-ad6e0280-6d3e-11eb-9681-cdec5cf795d6.png" style="width:100%;max-width:480px;" />
+</div>
