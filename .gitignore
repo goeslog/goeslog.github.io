@@ -6,6 +6,7 @@ _site
 
 ### NPM ###
 /node_modules/
+/sample_posts
 
 
 ### Atom ###
