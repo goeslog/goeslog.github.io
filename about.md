@@ -17,7 +17,7 @@ permalink: /whoami/
 <br/>
 <br/>
 
-## CAREER <span style="font-size:10px;">&nbsp;&nbsp; sort by date descending</span>
+## CAREER <span style="font-size:10px;">&nbsp;&nbsp; sorted by date descending</span>
 
 | COMPANY     | PERIOD                  | POSITION  | ROLE                     |
 | :---------- | :---------------------- | :-------- | :----------------------- |
@@ -27,7 +27,7 @@ permalink: /whoami/
 <br/>
 <br/>
 
-## PROJECTs <span style="font-size:10px;">&nbsp;&nbsp; sort by date descending</span>
+## PROJECTs <span style="font-size:10px;">&nbsp;&nbsp; sorted by date descending</span>
 
 | NAME & LINK                                                                                | COMPANY                 | USED TECH STACK   | 비고    |
 | ------------------------------------------------------------------------------------------ | ----------------------- | ----------------- | ------- |
