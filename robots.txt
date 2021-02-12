@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://goeslog.github.io/sitemap.xml
