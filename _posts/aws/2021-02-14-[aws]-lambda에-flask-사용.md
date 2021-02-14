@@ -99,6 +99,7 @@ ec2는 프리티어가 1년 제한이기에, 월 사용량 한도 내에 무료�
 - 프로젝트에 html template 생성
 
   vscode에서 폴더와 index.html 생성
+
   ![image](https://user-images.githubusercontent.com/49581472/107871220-fd85ca00-6ee2-11eb-873b-c8eacb6bb2af.png)
 
   index.html은 다음과 같음
