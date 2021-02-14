@@ -12,168 +12,175 @@ ec2는 프리티어가 1년 제한이기에, 월 사용량 한도 내에 무료�
 
 <br/>
 
-### aws credential 설정
+### 1. 프로젝트를 vscode로 오픈
 
-1. 프로젝트를 vscode로 오픈
+```bash
+➜  ~ (master) ✗ cd Documents
+➜  Documents (master) ✗ mkdir awssample
+➜  Documents (master) ✗ cd awssample
+➜  awssample (master) ✗ code .
+```
 
-   ```bash
-   ➜  ~ (master) ✗ cd Documents
-   ➜  Documents (master) ✗ mkdir awssample
-   ➜  Documents (master) ✗ cd awssample
-   ➜  awssample (master) ✗ code .
-   ```
+<br/>
 
-2. aws key 설정
+### 2. aws key 설정
 
-   - credentials 파일 생성 및 키 삽입
+- credentials 파일 생성 및 키 삽입
 
-     ```bash
-     ➜  awssample (master) ✗ touch credentials
-     ```
+  ```bash
+  ➜  awssample (master) ✗ touch credentials
+  ```
 
-     credentials 설정
+  credentials 설정
 
-     ```txt
-     [default]
-     aws_access_key_id = FKEFLSJEFL...
-     aws_secret_access_key = xcw3f09fw09jw...
-     ```
+  ```txt
+  [default]
+  aws_access_key_id = FKEFLSJEFL...
+  aws_secret_access_key = xcw3f09fw09jw...
+  ```
 
-     credentials 파일 이동
+  credentials 파일 이동
 
-     ```bash
-     ➜  awssample (master) ✗ mv credentials ~/.aws/
-     ```
+  ```bash
+  ➜  awssample (master) ✗ mv credentials ~/.aws/
+  ```
 
-     vi 편집기로 옮겨진 것 확인
+  vi 편집기로 옮겨진 것 확인
 
-     ```bash
-     ➜  awssample (master) ✗ vi ~/.aws/credentials
-     ```
+  ```bash
+  ➜  awssample (master) ✗ vi ~/.aws/credentials
+  ```
 
-3. pipenv로 실행
+<br/>
 
-   - pipenv가 없으면 아래 커멘드로 설치 요망
+### 3. pipenv로 실행
 
-     ```bash
-     ➜  awssample (master) ✗ sudo pip install pipenv
-     ```
+- pipenv가 없으면 아래 커멘드로 설치 요망
 
-   - 사용할 패키지 pipenv로 다운 후 가상환경 오픈
+  ```bash
+  ➜  awssample (master) ✗ sudo pip install pipenv
+  ```
 
-     ```bash
-     ➜  awssample (master) ✗ pipenv install flask
-     ➜  awssample (master) ✗ pipenv shell
-     ```
+- 사용할 패키지 pipenv로 다운 후 가상환경 오픈
 
-4. 예제 파일 생성
+  ```bash
+  ➜  awssample (master) ✗ pipenv install flask
+  ➜  awssample (master) ✗ pipenv shell
+  ```
 
-   - app.py 생성
+<br/>
 
-     ```bash
-     (awssample) ➜  awssample (master) ✗ touch app.py
-     ```
+### 4. 예제 파일 생성
 
-   - app.py 작성
+- app.py 생성
 
-     ```python
-     from flask import Flask, render_template
+  ```bash
+  (awssample) ➜  awssample (master) ✗ touch app.py
+  ```
 
-     app = Flask(__name__)
+- app.py 작성
 
+  ```python
+  from flask import Flask, render_template
 
-     @app.route("/")
-     def index():
-         return render_template('index.html')
+  app = Flask(__name__)
 
 
-     @app.route("/api")
-     def api():
-         return {"hello": "world"}
-     ```
+  @app.route("/")
+  def index():
+      return render_template('index.html')
 
-   - 프로젝트에 html template 생성
 
-     vscode에서 폴더와 index.html 생성
-     ![image](https://user-images.githubusercontent.com/49581472/107871220-fd85ca00-6ee2-11eb-873b-c8eacb6bb2af.png)
+  @app.route("/api")
+  def api():
+      return {"hello": "world"}
+  ```
 
-     index.html은 다음과 같음
+- 프로젝트에 html template 생성
 
-     ```html
-     <!DOCTYPE html>
-     <html lang="en">
-       <head>
-         <meta charset="UTF-8" />
-         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-         <meta
-           name="viewport"
-           content="width=device-width, initial-scale=1.0"
-         />
-         <title>Document</title>
-       </head>
-       <body>
-         <h1>Hello</h1>
-       </body>
-     </html>
-     ```
+  vscode에서 폴더와 index.html 생성
+  ![image](https://user-images.githubusercontent.com/49581472/107871220-fd85ca00-6ee2-11eb-873b-c8eacb6bb2af.png)
 
-5. flask 실행 및 확인
+  index.html은 다음과 같음
 
-   ```bash
-   (awssample) ➜  awssample (master) ✗ flask run
-   ```
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+    </head>
+    <body>
+      <h1>Hello</h1>
+    </body>
+  </html>
+  ```
 
-   그러면 `http://127.0.0.1:5000/`로 접근 가능
+<br/>
 
-   잘 뜨는 것을 확인하면 `ctrl + C`로 서버 종료
+### 5. flask 실행 및 확인
 
-6. zappa 설치와 설정
+```bash
+(awssample) ➜  awssample (master) ✗ flask run
+```
 
-   ```bash
-   (awssample) ➜  awssample (master) ✗ pipenv install zappa
-   ```
+그러면 `http://127.0.0.1:5000/`로 접근 가능
 
-   설치 완료 후
+잘 뜨는 것을 확인하면 `ctrl + C`로 서버 종료
 
-   ```bash
-   (awssample) ➜  awssample (master) ✗ zappa init
-   ```
+<br/>
 
-   이후 물어보는 사항들에 모두 `enter`입력
+### 6. zappa 설치와 설정
 
-   생성된 _*zappa_settings.json*_ 수정
+```bash
+(awssample) ➜  awssample (master) ✗ pipenv install zappa
+```
 
-   ```json
-   {
-     "dev": {
-       "app_function": "app.app",
-       "profile_name": "default",
-       "project_name": "awssample",
-       "runtime": "python3.8",
-       "s3_bucket": "zappa-bfkygpmzw",
-       "aws_region": "ap-northeast-2", // 지역
-       "log_level": "WARNING",
-       "memory_size": 128,
-       "timeout_seconds": 30
-     }
-   }
-   ```
+설치 완료 후
 
-7. zappa 배포
+```bash
+(awssample) ➜  awssample (master) ✗ zappa init
+```
 
-   ```bash
-   (awssample) ➜  awssample (master) ✗ zappa deploy dev
-   ```
+이후 물어보는 사항들에 모두 `enter`입력
 
-   ![image](https://user-images.githubusercontent.com/49581472/107871383-543fd380-6ee4-11eb-982e-78b036061b21.png)
+생성된 _*zappa_settings.json*_ 수정
 
-   배포 완료된 모습으로, `Deployment complete!`의 URL을 통해 접근 가능
+```json
+{
+  "dev": {
+    "app_function": "app.app",
+    "profile_name": "default",
+    "project_name": "awssample",
+    "runtime": "python3.8",
+    "s3_bucket": "zappa-bfkygpmzw",
+    "aws_region": "ap-northeast-2", // 지역
+    "log_level": "WARNING",
+    "memory_size": 128,
+    "timeout_seconds": 30
+  }
+}
+```
 
-   dev은 배포 키워드이며, 이를 변경시 **zappa_settings.json**의 `"dev"`부분도 수정해야 함
+<br/>
+
+### 7. zappa 배포
+
+```bash
+(awssample) ➜  awssample (master) ✗ zappa deploy dev
+```
+
+![image](https://user-images.githubusercontent.com/49581472/107871383-543fd380-6ee4-11eb-982e-78b036061b21.png)
+
+배포 완료된 모습으로, `Deployment complete!`의 URL을 통해 접근 가능
+
+dev은 배포 키워드이며, 이를 변경시 **zappa_settings.json**의 `"dev"`부분도 수정해야 함
 
    <br/>
    코드를 수정하고 업데이트 방법은
 
-   ```bash
-   (awssample) ➜  awssample (master) ✗ zappa update
-   ```
+```bash
+(awssample) ➜  awssample (master) ✗ zappa update
+```
