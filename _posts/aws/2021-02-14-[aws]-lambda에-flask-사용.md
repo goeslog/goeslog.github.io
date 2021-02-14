@@ -68,6 +68,12 @@ ec2는 프리티어가 1년 제한이기에, 월 사용량 한도 내에 무료�
   ➜  awssample (master) ✗ pipenv shell
   ```
 
+  `zsh: command not found: pipenv`가 발생한다면,
+
+  ```bash
+  ➜  awssample (master) ✗ python -m pipenv
+  ```
+
 <br/>
 
 ### 4. 예제 파일 생성
