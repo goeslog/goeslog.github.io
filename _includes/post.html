@@ -1,0 +1,72 @@
+<article class="post">
+	<header class="post-header">
+		<div class="post-title"> 
+			{{ page.title | escape }}
+		</div>
+		<time class="post-date dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+			{%- assign date_format = site.date_forma | default: "%Y/%m/%d" -%}
+			{{ page.date | date: date_format }}
+		</time>		
+	</header>
+
+	<div class="post-content">
+		{{ content }}
+	</div>
+	<div
+		style="
+		width: 60px;
+		height: 60px;
+		border-radius: 30px;
+		position: fixed;
+		right: 25px;
+		bottom: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: white;
+		box-shadow: 1px 3px 16px -3px rgb(100, 100, 100);
+		"
+		id="go-to-top"
+	>
+		top
+	</div>
+	<script>
+		scrollTop("go-to-top", 500);
+		function scrollTop(elem, duration) {
+		let target = document.getElementById(elem);
+
+		target.addEventListener("click", function () {
+			let currentY = window.pageYOffset;
+			let step = duration / currentY > 1 ? 10 : 100;
+			let timeStep = (duration / currentY) * step;
+			let intervalID = setInterval(scrollUp, timeStep);
+
+			let display = true;
+
+			function scrollUp() {
+			currentY = window.pageYOffset;
+			if (currentY === 0) {
+				clearInterval(intervalID);
+				display = true;
+				target.style.display = "flex";
+			} else {
+				if (display) {
+				display = false;
+				target.style.display = "none";
+				}
+				scrollBy(0, -step);
+			}
+			}
+		});
+		}
+	</script>
+</article>
+
+
+<!-- {% if page.comments %}
+<div id="post-disqus" class="container">
+{% include disqus.html %}
+</div>
+{% endif %} -->
+
+{% include comments.html %}

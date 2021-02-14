@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "[웹기초] script 태그의 defer와 async"
-description: "프론트엔드 면접 대비 스크립트 로드 시점 변화"
+description: "frontend 면접 대비 스크립트 로드 시점 변화"
 comments: true
-keywords: "프론르엔드, 면접, 브라우저, 렌더링, html, defer, async"
+category: web
 ---
 
 `</body>` 요소 바로 앞에 **script tag**가 존재하면, `async` 또는 `defer` 속성을 사용하는 것이 큰 효과가 없다

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "[js] REST API"
-description: "프론트엔드 면접 대비 REST API"
+description: "frontend 면접 대비 REST API"
 comments: true
-keywords: "프론르엔드, 면접, javascript, ajax, REST API, HTTP"
+category: javascript
 ---
 
 REST API는 `URI로 접근`가능하고 내용이 JSON,XML 등으로 표현된 `자원에 대한 행위`를 `HTTP Method`로 정의한다.

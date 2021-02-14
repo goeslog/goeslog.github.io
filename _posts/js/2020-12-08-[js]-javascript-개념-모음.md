@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "[js] javascript 개념 모음"
-description: "프론트엔드 면접 대비 javascript 학습"
+description: "frontend 면접 대비 javascript 학습"
 comments: true
-keywords: "프론르엔드, 면접, javascript, type, 실행 컨택스트, 호이스팅, 클로져, 가비지 컬렉터, 이벤트 루프, 동시성, es6, this, call by reference, call by value, null, undefined"
+category: javascript
 ---
 
-프론트엔드 면접 대비위한 js 핵심 모음 !
+frontend 면접 대비위한 js 핵심 모음 !
 
 ## 목차
 

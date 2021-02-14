@@ -3,7 +3,7 @@ layout: post
 title: "[aws] aws lambda와 flask, zappa"
 description: "aws lambda에서 flask를 통해 프로젝트를 생성"
 comments: true
-keywords: "프론르엔드, aws, lambda, flask, zappa, vscode"
+category: aws
 ---
 
 ec2는 프리티어가 1년 제한이기에, 월 사용량 한도 내에 무료인 `aws lambda`를 활용하여 api를 제작하기 위함
@@ -33,7 +33,7 @@ ec2는 프리티어가 1년 제한이기에, 월 사용량 한도 내에 무료�
 
   credentials 설정
 
-  ```txt
+  ```jsx
   [default]
   aws_access_key_id = FKEFLSJEFL...
   aws_secret_access_key = xcw3f09fw09jw...

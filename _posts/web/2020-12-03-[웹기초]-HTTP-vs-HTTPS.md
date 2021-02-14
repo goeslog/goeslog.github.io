@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "[웹기초] HTTP vs HTTPS"
-description: "프론트엔드 면접 대비 HTTP, HTTPS 비교"
+description: "frontend 면접 대비 HTTP, HTTPS 비교"
 comments: true
-keywords: "프론르엔드, 면접, http, https, ssl"
+categories: web
 ---
 
 결정적으로 <span style="font-weight:bold;color:purple;">보안</span> 차이
