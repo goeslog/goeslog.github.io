@@ -363,6 +363,16 @@ footer {
     visibility: hidden;
     display: none;
   }
+
+  .sidebar-brand {
+    font-size: 220%;
+  }
+}
+
+@media(max-width : 450px) {
+  .sidebar-nav :first-child {
+    display: none;
+  }
 }
 
 table > thead > tr > th, table > tbody > tr > td {
