@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[cs] 탐색 알고리즘"
+title: "[cs] 데이터베이스 무결성"
 description: "frontend 면접 대비 컴퓨터 기초 학습"
 comments: true
 category: computerScience
