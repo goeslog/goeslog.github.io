@@ -20,7 +20,7 @@ permalink: /whoami/
 ## CAREER <span style="font-size:10px;">&nbsp;&nbsp; sorted by date descending</span>
 
 | COMPANY     |         PERIOD          | POSITION  |                     ROLE |
-| :---------- | :---------------------: | :-------: | -----------------------: |
+| :---------- | :--------------------- | :-------: | -----------------------: |
 | NEXON KOREA |    2021.01.11 ~ ING     | ASSOCIATE | WEB APPLICATION ENGINEER |
 | (주)디파인  | 2020.09.01 ~ 2020.12.31 |  INTERN   |  CROSS PLATFORM ENGINEER |
 
@@ -30,7 +30,7 @@ permalink: /whoami/
 ## PROJECTs <span style="font-size:10px;">&nbsp;&nbsp; sorted by date descending</span>
 
 | NAME & LINK                                                                                |         COMPANY         |  USED TECH STACK  |    비고 |
-| :----------------------------------------------------------------------------------------- | :---------------------: | :---------------: | ------: |
+| :----------------------------------------------------------------------------------------- | ---------------------: | :--------------- | ------: |
 | [개인정보 찾기](https://www.notion.so/React-React-Native-95d5ec5cbfe14e3ea57ecfa26cd9517b) |       (주)디파인        |   REACT NATIVE    |       - |
 | [KHUST DANCE](https://www.notion.so/React-KHUST-DANCE-1ab835be7d8947cfaa4d8d299acf7594)    |    경희대학교 해커톤    |  REACT, Firebase  | 🏆 대상 |
 | [창고 찜하기](https://www.notion.so/React-Native-0594e28143c34770aeb729888af41f1d)         |       (주)디파인        |   REACT NATIVE    |       - |
