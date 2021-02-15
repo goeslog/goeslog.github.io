@@ -365,6 +365,6 @@ footer {
   }
 }
 
-table > tr {
+td,th {
   margin : 8px;
 }
