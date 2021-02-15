@@ -364,3 +364,7 @@ footer {
     display: none;
   }
 }
+
+table > tr {
+  margin : 8px;
+}
