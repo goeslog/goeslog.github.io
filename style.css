@@ -364,7 +364,7 @@ footer {
     display: none;
   }
 
-  .sidebar-brand {
+  .sidebar-brand > a {
     font-size: 36px;
   }
 }
@@ -381,4 +381,8 @@ table > thead > tr > th, table > tbody > tr > td {
 
 table { 
   min-width: 420px;
+}
+
+.post-content {
+  overflow-x: scroll;
 }
