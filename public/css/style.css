@@ -363,9 +363,9 @@ footer {
     visibility: hidden;
     display: none;
   }
-  
+
   .sidebar-brand {
-    font-size: 220%;
+    font-size: 36px;
   }
 }
 
