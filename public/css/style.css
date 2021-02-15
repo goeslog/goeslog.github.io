@@ -370,7 +370,7 @@ footer {
 }
 
 @media(max-width : 450px) {
-  .sidebar-nav :first-child {
+  .sidebar-nav :nth-child(3) {
     display: none;
   }
 }
