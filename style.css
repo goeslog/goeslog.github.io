@@ -379,10 +379,6 @@ table > thead > tr > th, table > tbody > tr > td {
   padding: 6px;
 }
 
-table { 
-  min-width: 420px;
-}
-
 .post-content {
   overflow-x: scroll;
 }
