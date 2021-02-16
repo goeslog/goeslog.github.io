@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[cs] 데이터베이스 파티셔닝, 샤딩"
+title: "database partitioning"
 description: "frontend 면접 대비 컴퓨터 기초"
 comments: true
 category: computerScience

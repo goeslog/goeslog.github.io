@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "[cs] 데이터베이스 무결성"
+title: "database integrity"
 description: "frontend 면접 대비 컴퓨터 기초 학습"
 comments: true
 category: computerScience
 ---
-
 
 데이터의 무결성은 데이터의 <span style="background-color:rgb(231, 194, 255);">정확성, 일관성, 유효성이 유지</span>되는 것을 말한다. 데이터의 무결성을 유지하는 것은 데이터베이스 관리시스템 (DBMS)의 중요한 기능이며, 주로 데이터에 적용되는 <span style="background-color:rgb();">연산에 제한을 두어 데이터의 무결성을 유지한다. 데이터베이스에서 말하는 무결성에는 다음과 같은 4가지 종류가 있다.
 
@@ -20,7 +19,6 @@ category: computerScience
 > 관계형 데이터베이스 모델에서 <span style="background-color:rgb(255, 171, 179);">참조 무결성은 참조 관계에 있는 두 테이블의 데이터가 항상 일관된 값을 갖도록 유지되는 것</span>을 말한다. 아래의 [그림 1]은 관계형 데이터베이스 모델에서 참조 무결성이 깨지는 경우를 나타낸다. 이 예시에서는 department 테이블을 참조하는 student 테이블을 보여주고 있다. 이러한 참조 관계에서 만약 department 테이블에서 id 값이 310인 <span style="background-color:rgb(117, 205, 255);">레코드가 삭제되면</span> student 테이블의 3번째 레코드는 <span style="background-color:rgb(206, 255, 196);">더 이상 존재하지 않는 데이터를 참조</span>하게 된다.
 
 ![image](https://user-images.githubusercontent.com/77267603/107911624-4b143c80-6fa0-11eb-89f6-f4adc12d9e02.png)
-
 
 ### 3. 도메인 무결성
 

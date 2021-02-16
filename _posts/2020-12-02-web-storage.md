@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[웹기초] 브라우저 storage"
+title: "web storage"
 description: "frontend 면접 대비 브라우저 저장소란?"
 comments: true
 categories: web

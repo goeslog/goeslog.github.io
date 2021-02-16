@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "[cs] 데이터베이스 정규화 역정규화"
+title: "database nomalization"
 description: "frontend 면접 대비 컴퓨터 기초"
 comments: true
 category: computerScience
 ---
-
 
 ## 릴레이션
 
@@ -19,7 +18,6 @@ category: computerScience
 - 릴레이션 스키마를 구성하는 에트리뷰트의 값은 동일해도 된다.
 - 에트리뷰트는 더 이상 쪼갤 수 없는 원자값으로 구성된다.
 - 릴레이션을 구성하는 튜플을 유일하게 식별하기 위한 속성들의 부분집합을 키(Key)로 설정한다.
-
 
 <br/>
 
@@ -63,7 +61,7 @@ category: computerScience
 
 정규화된 릴레이션은 하나의 릴레이션을 분해하기 때문에 원하는 자료가 하나의 릴레이션에 존재하지 않아 외래키를 이용해 참조해야하는 상황이 잦아집니다.
 
-이는 데이터베이스에 저장된 자료를 검색하는 시간을 증가시키며 성능을 저하시킬 수 있다. 
+이는 데이터베이스에 저장된 자료를 검색하는 시간을 증가시키며 성능을 저하시킬 수 있다.
 
 따라서 데이터베이스의 <span style="background-color:rgb(245, 252, 212);">물리적 설계 과정에서 성능을 향상시키기 위해 역정규화를 실행</span>
 
@@ -77,19 +75,19 @@ category: computerScience
 
 #### 릴레이션 분할
 
-릴레이션의 데이터를 검색할때는 목록중의 데이터를 순차적으로 조사하여 원하는 자료를 찾습니다. 
+릴레이션의 데이터를 검색할때는 목록중의 데이터를 순차적으로 조사하여 원하는 자료를 찾습니다.
 
-그래서 자주 사용하지 않는 속성이나 튜플이 릴레이션에 있을 경우 검색시 성능을 저하하게 만듭니다. 
+그래서 자주 사용하지 않는 속성이나 튜플이 릴레이션에 있을 경우 검색시 성능을 저하하게 만듭니다.
 
 이 경우에는 자주 사용하는 속성이나 튜플을 분해하여 성능을 향상시킵니다. 이 분할에는
 
 - **수직 분할**
 
-    <span style="background-color:rgb(245, 252, 212);"><span style="background-color:rgb(217, 242, 255);">자주 사용하는 속성과 그렇지 않는 속성을 구분해서 분할</span>
+  <span style="background-color:rgb(245, 252, 212);"><span style="background-color:rgb(217, 242, 255);">자주 사용하는 속성과 그렇지 않는 속성을 구분해서 분할</span>
 
 - **수평 분할**
 
-    <span style="background-color:rgb(237, 217, 255);"><span style="background-color:rgb(247, 205, 223);">자주 사용하는 튜플과 그렇지 않는 튜플을 구분해서 분할</span>
+  <span style="background-color:rgb(237, 217, 255);"><span style="background-color:rgb(247, 205, 223);">자주 사용하는 튜플과 그렇지 않는 튜플을 구분해서 분할</span>
 
 ### 2. 속성 역 정규화
 

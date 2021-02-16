@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[cs] 데이터베이스 RDBMS, NoSQL"
+title: "database basic"
 description: "frontend 면접 대비 컴퓨터 기초"
 comments: true
 category: computerScience

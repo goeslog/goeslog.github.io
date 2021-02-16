@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[cs] 객체지향과 함수형 프로그래밍"
+title: "oop vs functional"
 description: "frontend 면접 대비 컴퓨터 기초"
 comments: true
 category: computerScience

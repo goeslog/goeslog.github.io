@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[cs] 프로세스와 스레드"
+title: "process vs thread"
 description: "frontend 면접 대비 컴퓨터 기초 학습"
 comments: true
 category: computerScience

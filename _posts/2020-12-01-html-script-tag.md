@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[웹기초] script 태그의 defer와 async"
+title: "script async defer"
 description: "frontend 면접 대비 스크립트 로드 시점 변화"
 comments: true
 category: web

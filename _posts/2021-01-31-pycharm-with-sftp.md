@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[aws] ec2 인스턴스와 Pycharm sftp 연결"
+title: "ec2 with pycharm by sftp"
 description: "로컬에서 ec2 인스턴스 코드 수정 반영하기"
 comments: true
 category: aws
@@ -16,38 +16,27 @@ category: aws
 
 로컬에서 작성한 코드를 서버에서 실행하기 위해 서버에 설치된 파이썬 Interpreter를 지정해야 함.
 
-
-
 ### 1. Pycharm에서 연결할 프로젝트로 이동
-
 
 ### 2. Project Interpreter 설정창 열기
 
 > Menu -> File -> Settings -> Project -> Project Interpreter
 
-
 ### 3. Remote Interpreter 연결하기
 
 > 톱날버튼 클릭 후 -> Add Remote -> SSH Interpreter
-
 
 ### 4. Remote Interpreter를 연결하기 위해 우선 원격 서버를 추가
 
 > host에 public ip와 username 작성 후 Next
 
-
-
 ### 5. 접속을 위한 Key 설정
 
 > Key pair 선택 후 pem key의 위치로 첨부 후 Next
 
-
-
 ### 6. 서버에 적용할 프로젝트 선택
 
 > Running code on the remote server / Sync folder에서 폴더모양 아이콘 클릭 후 경로 설정
-
-
 
 ### 7. 현재 Pycharm에서 파일을 수정하거나 삭제하였을 때 서버도 자동으로 동기화 되는 것 적용
 

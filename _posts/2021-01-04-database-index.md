@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[cs] 데이터베이스 인덱싱"
+title: "database index"
 description: "frontend 면접 대비 컴퓨터 기초"
 comments: true
 category: computerScience

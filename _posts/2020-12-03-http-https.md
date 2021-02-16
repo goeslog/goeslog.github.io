@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[웹기초] HTTP vs HTTPS"
+title: "HTTP vs HTTPS"
 description: "frontend 면접 대비 HTTP, HTTPS 비교"
 comments: true
 categories: web
