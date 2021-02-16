@@ -1,4 +1,4 @@
-User-agent: *
+User-agent: Googlebot
 Allow: /
 
 Sitemap: https://goeslog.github.io/sitemap.xml

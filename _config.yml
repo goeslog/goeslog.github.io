@@ -23,7 +23,8 @@ email: unos@khu.ac.kr
 description: programmer
 comments_enabled: true
 # baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://goeslog.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://goeslog.github.io/ # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
 github_username: 1seok2
 disqus_shortname: "goesnow"
 discus-identifier: goesnow # add your discus identifier
