@@ -8,19 +8,19 @@ category: web
 
 구글 로그인(OAuth) 사용하기
 
-## 1. https://console.cloud.google.com/ 로 이동 후 프로젝트 생성
+### 1. <a href="https://console.cloud.google.com/" target="_blank">https://console.cloud.google.com/</a> 로 이동 후 프로젝트 생성
 
 ![image](https://user-images.githubusercontent.com/77267603/108161443-66ad4d80-712e-11eb-8634-6071838cfea6.png)
 
 
 
-## 2. 햄버거메뉴 > API 및 서비스 > 사용자 인증 정보
+### 2. 햄버거메뉴 > API 및 서비스 > 사용자 인증 정보
 
 ![image](https://user-images.githubusercontent.com/77267603/108161504-8a709380-712e-11eb-86bb-cace03b1058c.png)
 
 
 
-## 3. 상단의 +사용자 인증 정보 만들기 > OAuth 클라이언트 ID
+### 3. 상단의 +사용자 인증 정보 만들기 > OAuth 클라이언트 ID
 
 ![image](https://user-images.githubusercontent.com/77267603/108161504-8a709380-712e-11eb-86bb-cace03b1058c.png)
 
@@ -30,37 +30,37 @@ category: web
 
 
 
-## 4. 웹 어플리케이션으로 지정 후, URI, 승인된 리디렉션 등 기입
+### 4. 웹 어플리케이션으로 지정 후, URI, 승인된 리디렉션 등 기입
 URI는 프론트딴의 URI(로그인을 요청하는 곳)
 리디렉션은 로그인 요청 후 토큰을 받아갈 URI로 작성
 
 
 
 
-## 5. 발급 완료
+### 5. 발급 완료
 
 ![image](https://user-images.githubusercontent.com/77267603/108161616-be4bb900-712e-11eb-9ef7-f21894aabf6b.png)
 
 
-## 6. 구글 로그인 버튼 생성
+### 6. 구글 로그인 버튼 생성
 
 ```html
 <input type="button" id="loginBtn" value="login">
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script>
-$("#loginBtn").click(function(){
-    location.href="https://accounts.google.com/o/oauth2/auth?client_id="+
-    "클라이언트 ID를 여기에 넣습니다."+
-    "&redirect_uri="+
-    "http://localhost/redirect.html" +
-    "&response_type=code&scope=https://www.googleapis.com/auth/userinfo.email&approval_prompt=force&access_type=offline";
-});
+    $("#loginBtn").click(function(){
+        location.href="https://accounts.google.com/o/oauth2/auth?client_id="+
+        "클라이언트 ID를 여기에 넣습니다."+
+        "&redirect_uri="+
+        "http://localhost/redirect.html" +
+        "&response_type=code&scope=https://www.googleapis.com/auth/userinfo.email&approval_prompt=force&access_type=offline";
+    });
 </script>
 ```
 >예시로 작성된 index.html 임<br/>클라이언트 ID 입력 요망<br/>redirect URI는 구글 콘솔에서 허용된 목록에 존재해야만 함<br/>
 
 
-## 7. 로그인 버튼 클릭 후 구글 로그인 진행
+### 7. 로그인 버튼 클릭 후 구글 로그인 진행
 
 ![image](https://user-images.githubusercontent.com/77267603/108161787-20a4b980-712f-11eb-83c8-ca26b24286cf.png)
 
@@ -68,7 +68,7 @@ $("#loginBtn").click(function(){
 > 이 작업을 통해 token발급에 필요한 code를 얻을 수 있다
 
 
-## 8. 얻은 코드를 통해 token으로 변환
+### 8. 얻은 코드를 통해 token으로 변환
 
 ```javascript
 function getParameter(name){
@@ -127,10 +127,10 @@ function getParameter(name){
 
     ```json
     {
-    "id": "108976569521291913440",
-    "email": "dnjstjr31@gmail.com",
-    "verified_email": true,
-    "picture": "https://....../photo.jpg"
+        "id": "108976569521291913440",
+        "email": "dnjstjr31@gmail.com",
+        "verified_email": true,
+        "picture": "https://....../photo.jpg"
     }
     ```
 
