@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "how to use google OAuth"
+title: "구글 Oauth 사용하기"
 description: "구글 로그인 사용하기"
 comments: true
 category: web
