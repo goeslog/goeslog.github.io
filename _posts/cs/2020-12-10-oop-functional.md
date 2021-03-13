@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "oop vs functional"
+title: "객체지향 vs 함수형"
 description: "frontend 면접 대비 컴퓨터 기초"
 comments: true
 category: computerScience

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "browser rendering"
+title: "브라우저 렌더링"
 description: "frontend 면접 대비 브라우저 렌더링 과정"
 comments: true
 category: web

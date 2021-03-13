@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "web storage"
+title: "웹 스토리지 (로컬, 세션, 쿠키)"
 description: "frontend 면접 대비 브라우저 저장소란?"
 comments: true
 categories: web

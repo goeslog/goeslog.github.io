@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ec2 with pycharm by sftp"
+title: "EC2에 pycharm으로 sftp 원격 연결하기"
 description: "로컬에서 ec2 인스턴스 코드 수정 반영하기"
 comments: true
 category: aws

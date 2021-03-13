@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "script async defer"
+title: "script 태그의 async, defer"
 description: "frontend 면접 대비 스크립트 로드 시점 변화"
 comments: true
 category: web

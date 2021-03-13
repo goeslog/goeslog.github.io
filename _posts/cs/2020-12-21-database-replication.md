@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "database replication"
+title: "database 리플리케이션"
 description: "frontend 면접 대비 컴퓨터 기초"
 comments: true
 category: computerScience

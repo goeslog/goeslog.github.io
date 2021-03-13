@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "lambda with flask by zappa"
+title: "lambda에서 zappa를 사용하여 flask 설치하기"
 description: "aws lambda에서 flask를 통해 프로젝트를 생성"
 comments: true
 category: aws

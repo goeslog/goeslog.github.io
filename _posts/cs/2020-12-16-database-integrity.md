@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "database integrity"
+title: "database 무결성"
 description: "frontend 면접 대비 컴퓨터 기초 학습"
 comments: true
 category: computerScience

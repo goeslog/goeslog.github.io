@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "search algorithm"
+title: "탐색 알고리즘"
 description: "frontend 면접 대비 컴퓨터 기초 학습"
 comments: true
 category: computerScience

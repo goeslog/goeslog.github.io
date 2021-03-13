@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "event delegation"
+title: "javascript 이벤트 위임"
 description: "frontend 면접 대비 이벤트 위임 학습"
 comments: true
 category: javascript

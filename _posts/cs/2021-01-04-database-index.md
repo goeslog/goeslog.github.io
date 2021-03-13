@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "database index"
+title: "database 색인"
 description: "frontend 면접 대비 컴퓨터 기초"
 comments: true
 category: computerScience

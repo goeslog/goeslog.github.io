@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "database transaction"
+title: "database 트랜잭션"
 description: "frontend 면접 대비 컴퓨터 기초"
 comments: true
 category: computerScience

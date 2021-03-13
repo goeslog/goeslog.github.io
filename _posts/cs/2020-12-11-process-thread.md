@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "process vs thread"
+title: "process와 thread"
 description: "frontend 면접 대비 컴퓨터 기초 학습"
 comments: true
 category: computerScience

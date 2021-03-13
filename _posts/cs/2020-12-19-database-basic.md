@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "database basic"
+title: "database 기초"
 description: "frontend 면접 대비 컴퓨터 기초"
 comments: true
 category: computerScience
