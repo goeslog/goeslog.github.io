@@ -22,7 +22,7 @@ category: web
 
 ### 3. 상단의 +사용자 인증 정보 만들기 > OAuth 클라이언트 ID
 
-![image](https://user-images.githubusercontent.com/77267603/108161504-8a709380-712e-11eb-86bb-cace03b1058c.png)
+![image](https://user-images.githubusercontent.com/77267603/111246564-d2a9a580-8649-11eb-868f-836e7d2e0156.png)
 
 
 > 이후 동의화면 구성이라는 화면이 나오면 알맞는 도메인, 앱이름 등을 기입하여 완료
