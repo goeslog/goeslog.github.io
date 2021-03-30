@@ -1,14 +1,15 @@
 ---
 layout: post
-title: "Typescript + WebGL (1) | gts, webpack으로 vanilla Typescript 세팅하기"
+title: "gts, webpack으로 vanilla Typescript 세팅하기"
 description: "gts, webpack으로 Typescript 세팅하기"
 comments: true
 category: frontend
 ---
 
+
 # Typescript + WebGL (1) 
 
-## gts, webpack으로 vanilla Typescript 세팅하기
+### gts, webpack으로 vanilla Typescript 세팅하기
 
 <br/>
 
@@ -28,8 +29,12 @@ code .
 
 <br />
 
-`vscode`로 오픈한 경우, 다음과 같은 폴더 구조를 띈다.
-(필자는 `.gitignore`에 `node_modules`과 `package-lock.json`을 추가하였다)
+
+<span style="background-color:#eaeaea;">vscode</span>로 오픈한 경우, 다음과 같은 폴더 구조를 띈다.
+(필자는 
+<span style="background-color:#eaeaea;">.gitignore</span>에 
+<span style="background-color:#eaeaea;">node_modules</span>과 
+<span style="background-color:#eaeaea;">package-lock.json</span>을 추가하였다)
 
 <img width="200px" src="https://user-images.githubusercontent.com/49581472/112814101-e3323500-90b9-11eb-8fc6-6f0f55d17d4d.png" alt="프로젝트 생성 후 폴더 구조"/>
 
@@ -64,11 +69,20 @@ code .
 
 <br/>
 
-위 세팅을 바탕으로 src를 작성하면, `Uncaught ReferenceError: require is not defined at index.ts:1` 에러를 겪었었다.
+위 세팅을 바탕으로 src를 작성하면, 
+<span style="background-color:#eaeaea;">Uncaught ReferenceError: require is not defined at index.ts:1</span> 에러를 겪었었다.
 
-`import ... from`이 `require`로 컴파일 되지만, 브라우저에는 `reqiure`이 없어 `browserify`를 사용하라는 솔루션을 찾았다.
 
-`browserify`와 `rollup`을 연동하여 사용하려고 했지만, `webpack`이 좀 더 적적해보여 `webpack`을 사용한다.
+<span style="background-color:#eaeaea;">import ... from</span>이 
+<span style="background-color:#eaeaea;">require</span>로 컴파일 되지만, 브라우저에는 
+<span style="background-color:#eaeaea;">reqiure</span>이 없어 
+<span style="background-color:#eaeaea;">browserify</span>를 사용하라는 솔루션을 찾았다.
+
+
+<span style="background-color:#eaeaea;">browserify</span>와 
+<span style="background-color:#eaeaea;">rollup</span>을 연동하여 사용하려고 했지만, 
+<span style="background-color:#eaeaea;">webpack</span>이 좀 더 적절해보여 
+<span style="background-color:#eaeaea;">webpack</span>을 사용한다.
 
 <br/>
 
@@ -82,9 +96,12 @@ npm i -D css-loader file-loader node-sass sass-loader style-loader ts-loader
 npm i -D html-webpack-plugin webpack-dev-server
 ```
 
-필자는 css대신 scss를 사용하기 위해 `node-sass sass-loader`를 추가로 설치하였고, `ts-loader` 또한 추가로 설치하였다.
+필자는 css대신 scss를 사용하기 위해 
+<span style="background-color:#eaeaea;">node-sass sass-loader</span>를 추가로 설치하였고, 
+<span style="background-color:#eaeaea;">ts-loader</span> 또한 추가로 설치하였다.
 
-html파일 또한 웹팩에 추가하기 위해 `html-webpack-plugin` 플러그인을 추가하였다.
+html파일 또한 웹팩에 추가하기 위해 
+<span style="background-color:#eaeaea;">html-webpack-plugin</span> 플러그인을 추가하였다.
 
 ```javascript
 // root/webpack.config.js
@@ -146,7 +163,8 @@ module.exports = {
 };
 ```
 
-`package.json` 또한 설정해준다
+
+<span style="background-color:#eaeaea;">package.json</span> 또한 설정해준다
 
 ```json
 {
@@ -161,7 +179,8 @@ module.exports = {
 }
 ```
 
-`src`에 파일들을 추가한다.
+
+<span style="background-color:#eaeaea;">src</span>에 파일들을 추가한다.
 
 ```html
 <!-- root/src/index.html -->
@@ -182,7 +201,9 @@ module.exports = {
 
 위에서 `<script src="/public/main.js"></script>`를 추가할 필요가 없다.
 
-웹팩에서 알아서 `head` 태그에 `script`태그를 삽입해준다.
+웹팩에서 알아서 
+<span style="background-color:#eaeaea;">head</span> 태그에 
+<span style="background-color:#eaeaea;">script</span>태그를 삽입해준다.
 
 <br/>
 
@@ -207,4 +228,5 @@ npm run build
 npm run start
 ```
 
-`localhost:3000`에 진입하면 성공!
+
+<span style="background-color:#eaeaea;">localhost:3000</span>에 진입하면 성공!
